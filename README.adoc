@@ -1,0 +1,35 @@
+== Purpose
+
+This project provides a Maven archetype <<archetype>> to quickly create new Spring Boot boosters.
+
+== Technical details
+
+*TODO*: to be completed with more details.
+
+Here are the general steps needed to implement a booster:
+
+  . A new maven module is required that will reside in a new github repo
+  . Spring Boot BOM should be revisited as some starters or dependencies could be missing
+  . The code needs to be developed including a web page
+  . Create Unit and Integration tests
+  . Upstream documentation needs to be created that describes how one can play with the mission
+  . A new entry needs to be added within the Booster catalog
+  . The Jenkins jobs need to be updated in order to test the new Booster
+  . Create Openshift templates
+  . Extend Testsuite
+
+== Deploying and interacting with the booster
+
+This project actually generates a booster when the following command is issued:
+
+[source,bash,options="nowrap",subs="attributes+"]
+----
+$ mvn archetype:generate -DarchetypeGroupId=me.snowdrop -DarchetypeArtifactId=booster-archetype -DarchetypeVersion=1.0.0-SNAPSHOT -DgroupId=<your booster's group id> -DartifactId=<your booster's artifact id> -Dversion=<your booster's version>
+----
+
+[bibliography]
+== References
+
+- [[[archetype,1]]] Maven archetype: https://maven.apache.org/archetype/
+
+
