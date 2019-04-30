@@ -1,3 +1,5 @@
+== THIS PROJECT IS NOW READ-ONLY AND UNUSED ANYMORE
+
 == Purpose
 
 This project provides a Maven archetype <<archetype>> to quickly create new Spring Boot boosters.
